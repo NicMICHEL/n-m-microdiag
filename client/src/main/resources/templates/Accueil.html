@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Patient Diag</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div class="container">
+    <h1>Application Patient Diag</h1>
+</div>
+<div>
+    <!--
+    <tr >
+
+        <td th:text="${patient.lastName}"></td>
+        <td th:text="${patient.firstName}"></td>
+        <td th:text="${patient.birthDate}"></td>
+        <td th:text="${patient.gender}"></td>
+        <td th:text="${patient.address}"></td>
+        <td th:text="${patient.phoneNumber}"></td>
+
+    </tr>
+    -->
+    <table >
+        <thead>
+        <tr>
+            <th>lastName</th>
+            <th>firstName</th>
+            <th>birthDate</th>
+            <th>gender</th>
+            <th>phoneNumber</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+            <td th:text="${patient.lastName}"></td>
+            <td th:text="${patient.firstName}"></td>
+            <td th:text="${patient.birthDate}"></td>
+            <td th:text="${patient.gender}"></td>
+            <td th:text="${patient.address}"></td>
+            <td th:text="${patient.phoneNumber}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+</html>
